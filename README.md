@@ -40,6 +40,13 @@ To test a trained model and see the environment render in the terminal:
 python agent.py
 ```
 
+## Results
+Below is a sample training result visualized in TensorBoard. The graph shows the mean episode reward during training (`rollout/ep_rew_mean`). The clear upward trend demonstrates that the agent is learning to optimize its policy in the warehouse environment over time.
+
+![Mean Episode Reward During Training](results.png)
+
+- **Mean episode reward** increases as training progresses, indicating successful learning and improved agent performance.
+
 ## Example Output
 Below is an example of the warehouse grid rendered in the terminal during an episode:
 ```
@@ -58,16 +65,7 @@ Warehouse:
 - `.` = Empty space
 
 ## Project Structure
-- `airplane_boarding.py` — Contains the `WarehouseEnv` environment
+- `warehouse_env.py` — Contains the `WarehouseEnv` environment
 - `agent.py` — Training and testing script
 - `logs/` — TensorBoard logs
 - `models/` — Saved models
-
-## License
-MIT
-
----
-
-**Repository:** `warehouse-robot-rl`
-
-A custom OpenAI Gymnasium environment for multi-robot warehouse path planning, using reinforcement learning to optimize item pickup and delivery.

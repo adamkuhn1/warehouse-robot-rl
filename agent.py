@@ -1,5 +1,5 @@
 import gymnasium as gym
-from airplane_boarding import WarehouseEnv
+from warehouse_env import WarehouseEnv
 from stable_baselines3 import PPO
 from stable_baselines3.common.vec_env import SubprocVecEnv
 from stable_baselines3.common.env_util import make_vec_env
